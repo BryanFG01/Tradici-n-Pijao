@@ -156,13 +156,27 @@
     color: blanchedalmond;
   }
   /* video */
-  .video {
+  .presentacion {
+    display: grid;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  .presentacion video {
+    position: relative;
+    display: flex;
+  }
+
+  @media (max-width: 8.75em) {
+    .presentacion video{
+    flex-direction: column;
+
+
+    }
   }
   /* Projects section */
   
@@ -333,3 +347,4 @@
       text-align: center;
     }
   }
+
